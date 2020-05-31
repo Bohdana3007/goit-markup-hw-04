@@ -216,10 +216,17 @@ ul {
   display: flex;
   align-items: center;
 }
-.link-decoration:hover {
-  color: var(--background-text-white);
+.link-decoration:hover,
+.link-decoration:focus {
+  color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
+.social-icon:hover,
+.social-icon:focus {
+  fill: currentColor;
+  --color3: var(--primary-white-color);
+}
+
 .feature-list .team {
   margin-left: 30px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -288,16 +295,19 @@ ul {
   height: 90px;
   align-items: center;
   justify-content: center;
-  fill: inherit;
+  fill: currentColor;
+  --color3: var(--primary-text-color);
 }
 .client-icon {
   fill: currentColor;
   --color3: var(--primary-text-color);
+  --color1: var(--primary-text-color);
 }
 .client-icon:hover,
 .client-icon:focus {
   fill: currentColor;
   --color3: var(--accent-color);
+  --color1: var(--accent-color);
 }
 
 .company-name .item:hover,
