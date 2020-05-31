@@ -113,23 +113,20 @@ ul {
   align-items: center;
   justify-content: space-around;
 }
-.auth-nav .link:hover,
-.auth-nav .link:focus {
-  color: var(--accent-color);
-}
-.auth-nav .adress-icon:hover,
-.auth-nav .adress-icon:focus {
-  color: var(--accent-color);
-  background-color: var(--accent-color);
-}
+
 .adress-icon {
+  fill: currentColor;
   margin-right: 10px;
 }
-
+.adress-icon:hover,
+.adress-icon:focus {
+  fill: var(--accent-color);
+}
 .auth-nav .item + .item {
   margin-left: 30px;
 }
 .auth-nav .link {
+  color: currentColor;
   padding-top: 32px;
   padding-bottom: 32px;
   color: #757575;
@@ -271,25 +268,32 @@ ul {
 }
 .company-name .item {
   width: 170px;
+  height: 90px;
+  border: 1px solid var(--clients-icons-color);
+  border-radius: 4px;
+  fill: var(--clients-icons-color);
 }
 .company-name .item + .item {
   margin-left: 30px;
 }
-.client-icon {
+/* .company-name .item:not(:last-child) {
+  margin-right: 30px;
+} */
+.client-link {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 170px;
   height: 90px;
-  min-width: 170px;
-  fill: var(--clients-icons-color);
-  border: 1px solid var(--clients-icons-color);
-  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  fill: inherit;
 }
-.client-icon:hover,
-.client-icon:focus {
-  --color3: var(--clients-icons-color);
-  border-color: var(--accent-color);
+
+.company-name .item:hover,
+.company-name .item:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
+
 .section.border {
   border-top: 1px solid #ececec;
 }
@@ -459,11 +463,12 @@ ul {
   width: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  color: var(--primary-white-color);
+  fill: inherit;
 }
 
-.link-decoration-footer:hover {
-  color: var(--primary-white-color);
+.link-decoration-footer:hover,
+.link-decoration:focus {
+  fill: #ffffff;
   background-color: var(--accent-color);
 }
 .footer-end {
