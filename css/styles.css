@@ -118,11 +118,11 @@ ul {
   fill: currentColor;
   margin-right: 10px;
 }
-.adress-icon:hover,
+/* .adress-icon:hover,
 .adress-icon:focus {
   fill: currentColor;
   --color4: var(--accent-color);
-}
+} */
 .auth-nav .item + .item {
   margin-left: 30px;
 }
@@ -143,6 +143,7 @@ ul {
 .auth-nav .link:focus {
   fill: currentColor;
   color: var(--accent-color);
+  --color4: var(--accent-color);
 }
 
 /* Hero на майбутнє */
@@ -208,7 +209,7 @@ ul {
   margin-left: 10px;
 }
 .link-decoration {
-  color: currentColor;
+  fill: currentColor;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -218,14 +219,14 @@ ul {
 }
 .link-decoration:hover,
 .link-decoration:focus {
-  color: var(--primary-white-color);
+  --color3: var(--primary-white-color);
   background-color: var(--accent-color);
 }
-.social-icon:hover,
+/* .social-icon:hover,
 .social-icon:focus {
   fill: currentColor;
   --color3: var(--primary-white-color);
-}
+} */
 
 .feature-list .team {
   margin-left: 30px;
@@ -298,13 +299,14 @@ ul {
   fill: currentColor;
   --color3: var(--primary-text-color);
 }
-.client-icon {
+
+.client-link {
   fill: currentColor;
   --color3: var(--primary-text-color);
   --color1: var(--primary-text-color);
 }
-.client-icon:hover,
-.client-icon:focus {
+.client-link:hover,
+.client-link:focus {
   fill: currentColor;
   --color3: var(--accent-color);
   --color1: var(--accent-color);
